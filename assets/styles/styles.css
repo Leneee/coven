@@ -1,0 +1,246 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+background: rgba(0, 0, 0, 0.952);
+height: 70px;
+width: 100%;
+padding: 5px 20px;
+color: white;
+display: flex;
+align-items: center;
+gap:20px;
+position: fixed;
+z-index: 10;
+top: 0;
+}
+
+.logo-header{
+width: 65px;
+border-radius: 50%;
+}
+
+header ul {
+display: flex;
+align-items: center;
+list-style: none;
+gap: 20px;
+}
+
+li a{
+color:white;
+text-decoration: none;
+}
+
+.cover {
+width: 100%;
+height: 70vh;
+overflow: hidden;
+margin-bottom:8vh;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.filtro-cover{
+height: 100%;
+width: 100%;
+position:absolute;
+background: #0000008c;
+}
+
+.title-cover{
+position: absolute;
+color:white;
+font-family: 'Dancing Script', cursive;
+font-weight: normal;
+z-index: 1;
+font-size: 3rem;
+
+}
+
+.cover-image{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+footer .content-footer{
+height: 30vh;
+background-color: rgb(63, 33, 90);
+display: flex;
+padding: 5vh;
+}
+
+.social{
+display: flex;
+margin-right: 10vw;
+}
+.icon-social{
+width: 35px;
+margin: 8px;
+}
+
+.links-footer a{
+color:white;
+text-decoration: none;
+font-size: 1.2rem;
+display: flex;
+margin-bottom: 10px;
+}
+
+.copy{
+background-color: #150b1e;
+text-align: center;
+color: white;
+padding: 10px;
+}
+
+/*home carousel*/
+.card-carousel{
+  height: 80vh;
+  margin-bottom: 8vh;
+}
+.image-carousel{
+  height: 75vh;
+  width: 100%;
+  
+}
+.image-carousel img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.description-carousel{
+  color:gray;
+  font-size: 1.1rem;
+}
+.title-carousel{
+  font-family: 'Dancing Script', cursive;
+  color:#6a6a6a;
+  font-size: 2.5rem;
+  margin:20px 10px;
+  font-weight: normal;
+}
+/*products*/
+.card{
+  box-shadow: 0px 0px 5px #dbdbdb;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-cover{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  
+}
+.card-content{
+  color: rgb(63, 33, 90);
+  padding: 10px;
+}
+
+.name-product{
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.btn-view {
+  background-color: transparent;
+  border: 2px solid rgb(63, 33, 90);
+  border-radius: 0.6em;
+  color: rgb(63, 33, 90);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.btn-view:hover, .btn-view:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.btn-view {
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.btn-view:hover {
+  box-shadow: 0 0 40px 40px rgb(63, 33, 90) inset;
+}
+
+.nosotros{
+  margin-top: 16vh;
+}
+
+/*contacto*/
+
+.content-contacto{
+  height: 126vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  /*margin-bottom: 8vh;*/
+}
+
+.image-contacto{
+  width: 50vw;
+  height: 126vh;
+  overflow: hidden;
+}
+
+.img-serv{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.form-contacto{
+  color:gray;
+  font-size: 1.1rem;
+  width: 35%;
+  margin: auto;
+  margin-top: 16vh;
+  height: 84vh;
+}
+
+.title-contacto{
+  font-family: 'Dancing Script', cursive;
+  color:#6a6a6a;
+  font-size: 2.5rem;
+  margin:20px 10px;
+  font-weight: normal;
+}
+
+.input-form{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.btn-submit{
+  background-color: rgb(63, 33, 90);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
