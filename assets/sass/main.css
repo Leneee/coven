@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.952);
+  height: 70px;
+  width: 100%;
+  padding: 5px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+header .logo-header {
+  width: 65px;
+  border-radius: 50%;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.cover {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  margin-bottom: 8vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cover .filtro-cover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5490196078);
+}
+.cover .title-cover {
+  position: absolute;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-weight: normal;
+  z-index: 1;
+  font-size: 3rem;
+}
+.cover .cover-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.image-carousel {
+  height: 75vh;
+  width: 100%;
+}
+
+.image-carousel img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.description-carousel {
+  color: gray;
+  font-size: 1.1rem;
+}
+
+.title-carousel {
+  font-family: "Dancing Script", cursive;
+  color: #6a6a6a;
+  font-size: 2.5rem;
+  margin: 20px 10px;
+  font-weight: normal;
+}
+
+.products .card {
+  box-shadow: 0px 0px 5px #dbdbdb;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.products .card-cover {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.products .card-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.products .card-content {
+  color: rgb(63, 33, 90);
+  padding: 10px;
+}
+.products .name-product {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.products .btn-view {
+  background-color: transparent;
+  border: 2px solid rgb(63, 33, 90);
+  border-radius: 0.6em;
+  color: rgb(63, 33, 90);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.products .btn-view:hover, .products .btn-view:focus {
+  color: #fff;
+  outline: 0;
+}
+.products .btn-view {
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.products .btn-view:hover {
+  box-shadow: 0 0 40px 40px rgb(63, 33, 90) inset;
+}
+
+.nosotros {
+  margin-top: 16vh;
+}
+
+/*footer*/
+footer .content-footer {
+  height: 30vh;
+  background-color: rgb(63, 33, 90);
+  display: flex;
+  padding: 5vh;
+}
+footer .social {
+  display: flex;
+  margin-right: 10vw;
+}
+footer .icon-social {
+  width: 35px;
+  margin: 8px;
+}
+footer .links-footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  margin-bottom: 10px;
+}
+footer .copy {
+  background-color: #150b1e;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}/*# sourceMappingURL=main.css.map */
