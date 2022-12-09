@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 header {
   background: rgba(0, 0, 0, 0.952);
   height: 70px;
@@ -29,6 +24,40 @@ header ul {
 header a {
   color: white;
   text-decoration: none;
+}
+
+/*footer*/
+footer .content-footer {
+  height: 30vh;
+  background-color: rgb(63, 33, 90);
+  display: flex;
+  padding: 5vh;
+}
+footer .social {
+  display: flex;
+  margin-right: 10vw;
+}
+footer .icon-social {
+  width: 35px;
+  margin: 8px;
+}
+footer .links-footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  margin-bottom: 10px;
+}
+footer .copy {
+  background-color: #150b1e;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .cover {
@@ -145,31 +174,51 @@ header a {
   margin-top: 16vh;
 }
 
-/*footer*/
-footer .content-footer {
-  height: 30vh;
+.contacto .content-contacto {
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.contacto .image-contacto {
+  width: 50vw;
+  height: 126vh;
+  overflow: hidden;
+}
+.contacto .img-serv {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contacto .form-contacto {
+  color: gray;
+  font-size: 1.1rem;
+  margin: auto;
+}
+.contacto .title-contacto {
+  font-family: "Dancing Script", cursive;
+  color: #6a6a6a;
+  font-size: 2.5rem;
+  margin: 20px 10px;
+  font-weight: normal;
+}
+.contacto .input-form {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.contacto .btn-submit {
   background-color: rgb(63, 33, 90);
-  display: flex;
-  padding: 5vh;
-}
-footer .social {
-  display: flex;
-  margin-right: 10vw;
-}
-footer .icon-social {
-  width: 35px;
-  margin: 8px;
-}
-footer .links-footer a {
   color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  display: flex;
-  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
 }
-footer .copy {
-  background-color: #150b1e;
-  text-align: center;
-  color: white;
-  padding: 10px;
+@media (max-width: 767.98px) {
+  .contacto .image-contacto {
+    height: 40vh !important;
+  }
 }/*# sourceMappingURL=main.css.map */
