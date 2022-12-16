@@ -11,6 +11,15 @@ header {
   z-index: 10;
   top: 0;
 }
+@media (max-width: 767.98px) {
+  header {
+    justify-content: space-between;
+  }
+  header .dropdown img {
+    width: 32px;
+    height: 32px;
+  }
+}
 header .logo-header {
   width: 65px;
   border-radius: 50%;
@@ -21,14 +30,12 @@ header ul {
   list-style: none;
   gap: 20px;
 }
-header a {
-  color: white;
-  text-decoration: none;
+header .dropdown-item {
+  color: #6a6a6a !important;
 }
 
 /*footer*/
 footer .content-footer {
-  height: 30vh;
   background-color: rgb(63, 33, 90);
   display: flex;
   padding: 5vh;
@@ -42,17 +49,39 @@ footer .icon-social {
   margin: 8px;
 }
 footer .links-footer a {
-  color: white;
-  text-decoration: none;
   font-size: 1.2rem;
-  display: flex;
-  margin-bottom: 10px;
+  margin-left: 20px;
 }
 footer .copy {
   background-color: #150b1e;
   text-align: center;
   color: white;
   padding: 10px;
+}
+
+.btn_line, header a, footer .links-footer a {
+  text-decoration: none;
+  color: white !important;
+}
+
+.btn_line {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.btn_line:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0px;
+  transition: all 0.2s;
+}
+
+.btn_line:hover:after {
+  width: 100%;
+  background: white;
 }
 
 * {
@@ -64,7 +93,6 @@ footer .copy {
   width: 100%;
   height: 70vh;
   overflow: hidden;
-  margin-bottom: 8vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -84,6 +112,11 @@ footer .copy {
   z-index: 1;
   font-size: 3rem;
 }
+@media (max-width: 767.98px) {
+  .cover .title-cover {
+    font-size: 2rem;
+  }
+}
 .cover .cover-image {
   -o-object-fit: cover;
      object-fit: cover;
@@ -94,6 +127,7 @@ footer .copy {
 .image-carousel {
   height: 75vh;
   width: 100%;
+  padding-right: 20px;
 }
 
 .image-carousel img {
@@ -103,17 +137,27 @@ footer .copy {
      object-fit: cover;
 }
 
+@media (max-width: 767.98px) {
+  .image-carousel {
+    height: 50vh;
+  }
+}
 .description-carousel {
   color: gray;
   font-size: 1.1rem;
 }
 
-.title-carousel {
+.title-section {
   font-family: "Dancing Script", cursive;
   color: #6a6a6a;
   font-size: 2.5rem;
   margin: 20px 10px;
   font-weight: normal;
+}
+@media (max-width: 767.98px) {
+  .title-section {
+    font-size: 2rem;
+  }
 }
 
 .products .card {
@@ -220,5 +264,6 @@ footer .copy {
 @media (max-width: 767.98px) {
   .contacto .image-contacto {
     height: 40vh !important;
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

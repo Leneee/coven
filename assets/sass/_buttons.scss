@@ -1,0 +1,23 @@
+%boton{
+  text-decoration: none;
+  color:white !important;
+}
+
+.btn_line {
+  @extend %boton;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+.btn_line:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0px;
+  transition: all .2s;
+}
+.btn_line:hover:after {
+  width: 100%;
+  background: white;
+}

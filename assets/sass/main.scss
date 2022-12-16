@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'layouts';
+@import 'buttons';
 *{
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@
   width: 100%;
   height: 70vh;
   overflow: hidden;
-  margin-bottom:8vh;
+  //margin-bottom:8vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -31,6 +32,11 @@
     font-size: 3rem;
     
   }
+  @media (max-width: 767.98px) { 
+    .title-cover{
+      font-size: 2rem;
+    }
+  }
     
   .cover-image{
     object-fit: cover;
@@ -40,23 +46,31 @@
 }
 .image-carousel{
   height: 75vh;
-  width: 100%;  
+  width: 100%;
+  padding-right: 20px;
 }
 .image-carousel img{
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
+@media (max-width: 767.98px) { 
+  .image-carousel{
+    height: 50vh;
+  }
+}
 .description-carousel{
   color:gray;
   font-size: 1.1rem;
 }
-.title-carousel{
-  font-family: $primary_font;
-  color:#6a6a6a;
+.title-section{
+  @include titulos;
   font-size: 2.5rem;
   margin:20px 10px;
   font-weight: normal;
+  @media (max-width: 767.98px) {
+    font-size: 2rem;
+  }
 }
 .products{
   .card{
@@ -151,8 +165,7 @@
   }
 
   .title-contacto{
-    font-family: 'Dancing Script', cursive;
-    color:#6a6a6a;
+    @include titulos;
     font-size: 2.5rem;
     margin:20px 10px;
     font-weight: normal;
@@ -176,6 +189,7 @@
   @media (max-width: 767.98px) { 
     .image-contacto{
       height:40vh !important;
+      width: 100%;
     }
   }
 }

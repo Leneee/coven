@@ -13,16 +13,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="/assets/images/magiaa.png">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <title>Coven</title>
   <meta name="description" content="Productos mágicos y artesanales, Mas de 60 tipos de cuarzos, Joyería, Inciensos,herbolaria y rituales">
   <meta name="keywords" content="magia, cuarzos, tarot, lectura, adivinacion, witchy"/>
 </head>
 <body>
   <header>
-    <img src="/assets/images/logo.jpg" class="logo-header" alt="logo_coven">
-    <div class="dropdown d-md-none d-flex">
-      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-        Menu
+    <a href="/index.html">
+      <img src="/assets/images/logo.jpg" class="logo-header" alt="logo coven de la empresa, circulo con luna dentro">
+    </a>   
+    <div class="dropdown d-md-none d-flex ml-auto">
+      <a class="" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="/assets/images/menu.png" alt="">
       </a>
     
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -35,52 +39,90 @@
     </div>
     <ul class="mb-0 d-md-flex d-none">
       <li>
-        <a href="/index.html">Home</a>  
+        <a href="/index.html" class="btn_line">Home</a>  
       </li>
       <li>
-        <a href="/views/servicios.html">Servicios</a>
+        <a href="/views/servicios.html" class="btn_line">Servicios</a>
       </li>
       <li>
-        <a href="/views/catalogo.html">Catalogo</a>
+        <a href="/views/catalogo.html"  class="btn_line">Catalogo</a>
       </li>
       <li>
-        <a href="/views/contacto.html">Contacto</a>
+        <a href="/views/contacto.html"  class="btn_line">Contacto</a>
       </li>
       <li>
-        <a href="/views/nosotros.html">Nosotros</a>
+        <a href="/views/nosotros.html"  class="btn_line">Nosotros</a>
       </li>
     </ul>
   </header>  
-  <section class="cover">
+  <section class="cover mb-5">
     <h1 class="title-cover">✨ Quartz, Herbal & Magic ✨</h1>
     
-    <img src="/assets/images/brujitas.jpg" alt="cover_coven_home" class="cover-image" srcset="">
+    <img src="/assets/images/brujitas.jpg" alt="cover chicas en fila en el campo con vestidos blancos." class="cover-image" srcset="">
     <div class="filtro-cover"></div>
   </section>
 
   <section class="mb-5">
-    <div class=" px-0 mx-auto col-10 row">
-      <div class="image-carousel px-0 col-md-6 col-12">
-        <img src="/assets/images/evento.jpg" alt="image_evento">
+    <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "pageDots": false, "autoPlay": true }'>
+      <div class="px-0 mx-0 col-12 row">
+        <div class="col-10 d-md-flex mx-auto">
+          <div class="image-carousel col-md-6 col-12 pr-4">
+            <img src="/assets/images/evento.jpg" alt="informacion circulo de mujeres, manifestando abundancia, 12 de septiembre a las 7pm">
+          </div>
+          <div class="content-text-carousel col-md-6 col-12">
+            <h2 class="title-section">Manifestando Abundancia</h2>
+            <p class="description-carousel">Reunión Mágica, Conectando con la abundancia Te invitamos hoy a ti querida bruja, para aprender a conectar con nuestra energía próspera, aprenderemos a decretar todo lo qué ya nos espera. En compañía de @fito.santa y @covenmaiorum_ Te invitamos a este círculo de aprendizaje y prosperidad. Envíanos un Dm para confirmar tu participación.✨</p>
+          </div>
+        </div>
       </div>
-      <div class="content-text-carousel col-md-6 col-12">
-        <h2 class="title-carousel">Manifestando Abundancia</h2>
-        <p class="description-carousel">Reunión Mágica, Conectando con la abundancia Te invitamos hoy a ti querida bruja, para aprender a conectar con nuestra energía próspera, aprenderemos a decretar todo lo qué ya nos espera. En compañía de @fito.santa y @covenmaiorum_ Te invitamos a este círculo de aprendizaje y prosperidad. Envíanos un Dm para confirmar tu participación.✨</p>
+      <div class="px-0 mx-0 col-12 row">
+        <div class="px-0 mx-0 mx-auto d-md-flex col-10 row">
+          <div class="image-carousel px-0 col-md-6 col-12">
+            <img src="/assets/images/amor.jpeg" alt="kit de amor propio, Incluye sales exfoliantes, atadod de romero y canela 3 velas rosas">
+          </div>
+          <div class="content-text-carousel col-md-6 col-12">
+            <h2 class="title-section">Kit Amor Propio ✨</h2>
+            <p class="description-carousel"></p>
+            <div class="description-carousel">
+              <p>Hola bruja@, esperando que te encuentres excelente y list@ para llevar a cabo este pequeño ritual, que nos enriquecerá de amor, agradecimiento hacia ti mism@ y atraerá todo lo bueno que se encuentra dentro de ti.</p>  
+              <p>Incluye:</p>
+              <ul>
+                <li>Atado de romero con canela, pétalos de rosas endulzados y cuarzos rosas.</li>
+                <li>Trio de velas rojas con pétalos de rosa endulzadas.</li>
+                <li>Sales exfoliantes de menta, miel, rosas y menta seca.</li>
+                <li>Amuleto de cuarzo rosa.</li>
+                <li>Guia básica para ejecutar el ritual en pdf.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-0 mx-0 col-12 row">
+        <div class="col-10 d-md-flex mx-auto">
+          <div class="image-carousel col-md-6 col-12 pr-4">
+            <img src="/assets/images/salvia.jpeg" alt="mano con 3 atados de salvia blanca">
+          </div>
+          <div class="content-text-carousel col-md-6 col-12">
+            <h2 class="title-section">Sahumerios Artesanales, con intención y magia.</h2>
+            <p class="description-carousel">Desde tiempos ancestrales, la salvia ha sido utilizada por chamanes y en brujería, sobre todo en rituales y hechizos de magia blanca. Una de sus principales funciones es la limpieza y purificación energética a partir de incienso y hojas quemadas, pues se considera que el humo de la salvia contiene energías purificadoras.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="products d-flex justify-content-center col-10 mx-auto">
+  <section class="products mb-4 d-flex justify-content-center col-10 mx-auto">
     <div class=" row">
+      <h2 class="title-section">Productos</h2>
       <div class="col-md-4 col-12 mb-4">
         <div class="card">
           <div class="card-cover">
-            <img src="/assets/images/anillos2.jpg" alt="anillo_piedra_lunar" class="card-image">
+            <img src="/assets/images/anillos2.jpg" alt="palo decorado con dos anillos de piedra lunar" class="card-image">
           </div>
     
           <div class="card-content">
             <h3 class="name-product">Anillo de piedra lunar</h3>
-            <a class="btn-view" href="">view</a>
+            <a class="btn-view" href="/views/contacto.html">Adquirir</a>
           </div>
         </div>
       </div>
@@ -88,12 +130,12 @@
       <div class="col-md-4 col-12 mb-4">
         <div class="card">
           <div class="card-cover">
-            <img src="/assets/images/anillos.jpg" alt="anillo_proteccion" class="card-image">
+            <img src="/assets/images/anillos.jpg" alt="mano con diversos anillos de proteccion de diferente colores" class="card-image">
           </div>
     
           <div class="card-content">
             <h3 class="name-product">Anillos de proteccion</h3>
-            <a class="btn-view" href="">view</a>
+            <a class="btn-view" href="/views/contacto.html">Adquirir</a>
           </div>
         </div>
       </div>
@@ -101,12 +143,12 @@
       <div class="col-md-4 col-12 mb-4">
         <div class="card">
           <div class="card-cover">
-            <img src="/assets/images/juego.jpg" alt="conjunto_amatista" class="card-image">
+            <img src="/assets/images/juego.jpg" alt="aretes y collar de acero inoxidable con amatista sobre una mano" class="card-image">
           </div>
     
           <div class="card-content">
             <h3 class="name-product">Conjunto amatista</h3>
-            <a class="btn-view" href="">view</a>
+            <a class="btn-view" href="/views/contacto.html">Adquirir</a>
           </div>
         </div>
       </div>
@@ -114,12 +156,12 @@
       <div class="col-md-4 col-12 mb-4">
         <div class="card">
           <div class="card-cover">
-            <img src="/assets/images/amatista.jpg" alt="amatista_bruto" class="card-image">
+            <img src="/assets/images/amatista.jpg" alt="amatista en bruto sobre plantas" class="card-image">
           </div>
     
           <div class="card-content">
             <h3 class="name-product">Amatista en bruto</h3>
-            <a class="btn-view" href="">view</a>
+            <a class="btn-view" href="/views/contacto.html">Adquirir</a>
           </div>
         </div>
       </div>
@@ -127,12 +169,12 @@
       <div class="col-md-4 col-12 mb-4">
         <div class="card">
           <div class="card-cover">
-            <img src="/assets/images/collar.jpg" alt="collar_amatista" class="card-image">
+            <img src="/assets/images/collar.jpg" alt="collares de acero inoxidable con amatista sobre tela blanca" class="card-image">
           </div>
     
           <div class="card-content">
             <h3 class="name-product">Collar Amatista</h3>
-            <a class="btn-view" href="">view</a>
+            <a class="btn-view" href="/views/contacto.html">Adquirir</a>
           </div>
         </div>
       </div>
@@ -140,12 +182,12 @@
       <div class="col-md-4 col-12 mb-4">
         <div class="card">
           <div class="card-cover">
-            <img src="/assets/images/perfume.jpg" alt="perfumero" class="card-image">
+            <img src="/assets/images/perfume.jpg" alt="cuatro collares perfumeros de diferente colores, sobre trozo de madera" class="card-image">
           </div>
     
           <div class="card-content">
             <h3 class="name-product">Perfumero</h3>
-            <a class="btn-view" href="">view</a>
+            <a class="btn-view" href="/views/contacto.html">Adquirir</a>
           </div>
         </div> 
       </div>
@@ -156,24 +198,24 @@
   </section>
 
   <footer>
-    <div class="content-footer">
+    <div class="content-footer d-flex justify-content-between">
       <div class="social">
         <a href="https://www.facebook.com/CovenMagiaHerbal">
           <div class="facebook">
-            <img src="/assets/images/facebook.png" alt="logo-facebook" class="icon-social">
+            <img src="/assets/images/facebook.png" alt="logo de facebook" class="icon-social">
           </div>
         </a>
         
         <a href="https://www.instagram.com/covenmaiorum_/">
           <div class="instagram">
-            <img src="/assets/images/instagram.png" alt="logo-instagram" class="icon-social">
+            <img src="/assets/images/instagram.png" alt="logo de instagram" class="icon-social">
           </div>
         </a>
         
     </div>
-    <div class="links-footer">
+    <div class="links-footer d-md-flex d-block align-items-center">
       <a href="/views/nosotros.html">Nosotros</a>
-      <a href="/views/contacto.html">Catalogo</a>
+      <a href="/views/catalogo.html">Catalogo</a>
       <a href="/views/servicios.html">Servicios</a>
       <a href="/views/contacto.html">Contacto</a>
     </div>
@@ -181,7 +223,7 @@
     
     
     <div class="copy">
-      <p> © 2022, Quartz, Herbal & Magic</p>
+      <p class="mb-0"> © 2022, Quartz, Herbal & Magic</p>
     </div>
   </footer>
 </body>
