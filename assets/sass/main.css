@@ -160,6 +160,16 @@ footer .copy {
   }
 }
 
+.parent-cart {
+  position: fixed;
+  width: 300px;
+  top: 70px;
+  z-index: 10;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid gray;
+}
+
 .products .card {
   box-shadow: 0px 0px 5px #dbdbdb;
   border-top-left-radius: 5px;
